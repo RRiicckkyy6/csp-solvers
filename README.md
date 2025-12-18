@@ -28,13 +28,7 @@ A modular, extensible Python framework for solving Constraint Satisfaction Probl
 ├── README.md                         # Project documentation
 ├── data/
 │   └── hardest_sudoku.json          # Collection of expert Sudoku puzzles
-├── results/                         # Experimental results directory
-│   ├── comprehensive_results.csv
-│   ├── comprehensive_results_1.csv
-│   ├── comprehensive_results_2.csv
-│   ├── comprehensive_results_3.csv
-│   ├── comprehensive_results_4.csv
-│   └── sudoku_comprehensive_results.csv
+├── results/                         # Experimental results directory 
 └── src/
     ├── core.py                      # Core CSP and Constraint classes
     ├── constraints.py               # Constraint implementations (AllDifferent, etc.)
