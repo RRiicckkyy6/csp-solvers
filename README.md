@@ -48,7 +48,7 @@ A modular, extensible Python framework for solving Constraint Satisfaction Probl
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/csp-solver.git
+git clone https://github.com/RRiicckkyy6/csp-solver.git
 cd csp-solver
 
 # No external dependencies required - uses Python standard library only
