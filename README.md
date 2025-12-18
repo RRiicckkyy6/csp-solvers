@@ -25,17 +25,29 @@ A modular, extensible Python framework for solving Constraint Satisfaction Probl
 ## Project Structure
 
 ```
-├── core.py                    # Core CSP and Constraint classes
-├── constraints.py             # Constraint implementations (AllDifferent, etc.)
-├── solver.py                  # Unified solver interface
-├── search_backtracking.py     # Backtracking search with CBJ
-├── search_local.py            # Min-conflicts local search
-├── propagation.py             # AC-3 and forward checking
-├── heuristics.py              # Variable and value ordering heuristics
-├── problem_graph_coloring.py  # Graph coloring problem generator
-├── problem_sudoku.py          # Sudoku problem (as binary CSP)
-├── experiment.py              # Benchmarking framework
-└── hardest_sudoku.json        # Collection of expert Sudoku puzzles
+├── README.md                         # Project documentation
+├── data/
+│   └── hardest_sudoku.json          # Collection of expert Sudoku puzzles
+├── results/                         # Experimental results directory
+│   ├── comprehensive_results.csv
+│   ├── comprehensive_results_1.csv
+│   ├── comprehensive_results_2.csv
+│   ├── comprehensive_results_3.csv
+│   ├── comprehensive_results_4.csv
+│   └── sudoku_comprehensive_results.csv
+└── src/
+    ├── core.py                      # Core CSP and Constraint classes
+    ├── constraints.py               # Constraint implementations (AllDifferent, etc.)
+    ├── solver.py                    # Unified solver interface
+    ├── search_backtracking.py       # Backtracking search with CBJ
+    ├── search_local.py              # Min-conflicts local search
+    ├── propagation.py               # AC-3 and forward checking
+    ├── heuristics.py                # Variable and value ordering heuristics
+    ├── problem_graph_coloring.py    # Graph coloring problem generator
+    ├── problem_sudoku.py            # Sudoku problem (as binary CSP)
+    ├── sudoku_dataset.py            # Sudoku dataset utilities
+    ├── experiment.py                # Benchmarking framework
+    └── test_sudoku_generation.py    # Sudoku generation tests
 ```
 
 ## Installation
@@ -47,6 +59,13 @@ cd csp-solver
 
 # No external dependencies required - uses Python standard library only
 python --version  # Requires Python 3.7+
+
+# Add src directory to Python path or run from project root
+# Option 1: Set PYTHONPATH
+export PYTHONPATH="${PYTHONPATH}:$(pwd)/src"  # Linux/Mac
+set PYTHONPATH=%PYTHONPATH%;%cd%\src          # Windows
+
+# Option 2: Run Python from project root and import with src prefix
 ```
 
 ## Usage
@@ -54,9 +73,9 @@ python --version  # Requires Python 3.7+
 ### Basic Usage
 
 ```python
-from solver import solve
-from problem_graph_coloring import create_random_graph_coloring_csp
-from problem_sudoku import create_sudoku_csp
+from src.solver import solve
+from src.problem_graph_coloring import create_random_graph_coloring_csp
+from src.problem_sudoku import create_sudoku_csp
 
 # Solve a random graph coloring problem
 csp = create_random_graph_coloring_csp(n=50, p=0.2, k=4)
@@ -72,7 +91,8 @@ else:
 ### Solving Sudoku
 
 ```python
-from problem_sudoku import create_sudoku_csp, parse_sudoku_string
+from src.problem_sudoku import create_sudoku_csp, parse_sudoku_string
+from src.solver import solve
 
 # From a string (81 characters, 0 = empty)
 puzzle = "530070000600195000098000060800060003400803001700020006060000280000419005000080079"
@@ -88,7 +108,7 @@ if solution:
 ### Configuring the Solver
 
 ```python
-from solver import solve
+from src.solver import solve
 
 # Basic backtracking (no inference)
 solution, stats = solve(csp, inference="none")
@@ -111,7 +131,7 @@ solution, stats = solve(csp, inference="min_conflicts", max_steps=100000)
 The framework includes a comprehensive benchmarking system:
 
 ```python
-from experiment import run_graph_coloring_experiment, run_sudoku_experiment
+from src.experiment import run_graph_coloring_experiment, run_sudoku_experiment
 
 # Run graph coloring experiments
 run_graph_coloring_experiment(
@@ -164,7 +184,7 @@ Maintains conflict sets to track which variables caused value eliminations. When
 ### Adding a New Problem Type
 
 ```python
-from core import CSP, Constraint
+from src.core import CSP, Constraint
 
 class MyConstraint(Constraint):
     def __init__(self, variables):
