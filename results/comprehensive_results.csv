@@ -1,0 +1,9 @@
+problem_type,n,p,k,difficulty,config,inference,var_order,val_order,use_cbj,trials,success_rate,avg_runtime,std_runtime,avg_checks,avg_backtracks,avg_steps
+graph_coloring,50,0.16,4,,fc+mrv+lcv,fc,mrv,lcv,False,5,0.6,0.1204646110534668,0.21248708072690561,1651,1621,
+graph_coloring,50,0.16,4,,fc+mrv+lcv+CBJ,fc,mrv,lcv,True,5,0.6,0.12475733757019043,0.22119519814627778,1651,1490,
+graph_coloring,50,0.16,4,,fc+dom_wdeg+lcv,fc,dom_wdeg,lcv,False,5,0.6,0.2205505847930908,0.31658039305873453,1672.2,1642.2,
+graph_coloring,50,0.16,4,,fc+dom_wdeg+lcv+CBJ,fc,dom_wdeg,lcv,True,5,0.6,0.21912899017333984,0.3229773500779425,1672.2,1354.4,
+graph_coloring,50,0.16,4,,mac+mrv+lcv,mac,mrv,lcv,False,5,0.6,0.1560964584350586,0.2728615996209708,451.2,421.2,
+graph_coloring,50,0.16,4,,mac+mrv+lcv+CBJ,mac,mrv,lcv,True,5,0.6,0.16001148223876954,0.2696425877230906,451.2,290.2,
+graph_coloring,50,0.16,4,,mac+dom_wdeg+lcv,mac,dom_wdeg,lcv,False,5,0.6,0.13484277725219726,0.18684139411707534,339.8,309.8,
+graph_coloring,50,0.16,4,,mac+dom_wdeg+lcv+CBJ,mac,dom_wdeg,lcv,True,5,0.6,0.13691601753234864,0.18395997933966374,339.8,181.8,

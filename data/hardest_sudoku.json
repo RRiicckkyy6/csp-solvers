@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "total_generated": 1000,
+    "total_solved": 1000,
+    "num_kept": 10,
+    "top_percent": 1,
+    "min_clues": 17,
+    "max_clues": 25,
+    "inference_method": "fc",
+    "timestamp": "2025-12-18 04:21:34"
+  },
+  "puzzles": [
+    {
+      "puzzle": "000000000070040206000030005000004052000003000000092100000000000040050000607080021",
+      "num_clues": 20,
+      "solvable": true,
+      "solve_time": 61.85366654396057,
+      "backtracks": 159759,
+      "constraint_checks": 159840
+    },
+    {
+      "puzzle": "000700040000310000000000060060000000000000600042000007304800025006000034000003000",
+      "num_clues": 19,
+      "solvable": true,
+      "solve_time": 43.4021577835083,
+      "backtracks": 116586,
+      "constraint_checks": 116667
+    },
+    {
+      "puzzle": "040000005006000071000000000407002000010007582000100047000000060024000010000060000",
+      "num_clues": 21,
+      "solvable": true,
+      "solve_time": 25.97115397453308,
+      "backtracks": 67644,
+      "constraint_checks": 67725
+    },
+    {
+      "puzzle": "023000000090000007016000000000000000600100003089000004005040000000000070900002000",
+      "num_clues": 17,
+      "solvable": true,
+      "solve_time": 13.333135604858398,
+      "backtracks": 33090,
+      "constraint_checks": 33171
+    },
+    {
+      "puzzle": "700000200000030000005000706030500000000028005000000803000003500000200387008100002",
+      "num_clues": 22,
+      "solvable": true,
+      "solve_time": 10.798994541168213,
+      "backtracks": 26361,
+      "constraint_checks": 26442
+    },
+    {
+      "puzzle": "000901076740020030000070000100000380005000000020085000000000000000800100080003000",
+      "num_clues": 20,
+      "solvable": true,
+      "solve_time": 7.818893909454346,
+      "backtracks": 18093,
+      "constraint_checks": 18174
+    },
+    {
+      "puzzle": "070100000524000000103000000000031700000000000030000090300002050900000000410950000",
+      "num_clues": 20,
+      "solvable": true,
+      "solve_time": 7.154999494552612,
+      "backtracks": 16629,
+      "constraint_checks": 16710
+    },
+    {
+      "puzzle": "050100000008000000002009084070900000000030000004070000081000009000001002003000008",
+      "num_clues": 19,
+      "solvable": true,
+      "solve_time": 6.633948087692261,
+      "backtracks": 19004,
+      "constraint_checks": 19085
+    },
+    {
+      "puzzle": "040006000000800000070000400003000800080000000104007930720000000000400000010729600",
+      "num_clues": 21,
+      "solvable": true,
+      "solve_time": 3.937166213989258,
+      "backtracks": 10929,
+      "constraint_checks": 11010
+    },
+    {
+      "puzzle": "080043000000000200010087530000000407002130000000400000008024005300000000050000002",
+      "num_clues": 22,
+      "solvable": true,
+      "solve_time": 3.1098999977111816,
+      "backtracks": 7792,
+      "constraint_checks": 7873
+    }
+  ]
+}

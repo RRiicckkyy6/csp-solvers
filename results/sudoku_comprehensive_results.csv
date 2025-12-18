@@ -1,0 +1,2 @@
+problem_type,n,p,k,difficulty,config,inference,var_order,val_order,use_cbj,trials,success_rate,avg_runtime,std_runtime,avg_checks,avg_backtracks,avg_steps
+sudoku,,,,expert,min_conflicts,min_conflicts,,lcv,False,5,0.0,65.08077869415283,2.2626061159802298,173997820.6,,100000

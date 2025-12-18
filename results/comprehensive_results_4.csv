@@ -1,0 +1,10 @@
+n,p,k,config,inference,var_order,val_order,use_cbj,trials,success_rate,avg_runtime,std_runtime,avg_checks,avg_backtracks,avg_steps
+50,0.16,4,fc+mrv+lcv,fc,mrv,lcv,False,5,0.6,0.17199912071228027,0.19594870226683508,1844.8,1814.8,
+50,0.16,4,fc+mrv+lcv+CBJ,fc,mrv,lcv,True,5,0.6,0.061386919021606444,0.0801536606183203,286.8,239.2,
+50,0.16,4,fc+dom_wdeg+lcv,fc,dom_wdeg,lcv,False,5,0.6,0.27067956924438474,0.35049679439250964,1825.4,1795.4,
+50,0.16,4,fc+dom_wdeg+lcv+CBJ,fc,dom_wdeg,lcv,True,5,0.2,0.1729799270629883,0.15115306686587124,454.4,399,
+50,0.16,4,mac+mrv+lcv,mac,mrv,lcv,False,5,0.6,0.20035710334777831,0.24216417775899618,673.6,643.6,
+50,0.16,4,mac+mrv+lcv+CBJ,mac,mrv,lcv,True,5,0.2,0.2871884346008301,0.3176330318044731,389.2,294.4,
+50,0.16,4,mac+dom_wdeg+lcv,mac,dom_wdeg,lcv,False,5,0.6,0.1641082763671875,0.19182745979870916,354.6,324.6,
+50,0.16,4,mac+dom_wdeg+lcv+CBJ,mac,dom_wdeg,lcv,True,5,0.6,0.06171669960021973,0.03287344543915761,107.6,56.4,
+50,0.16,4,min_conflicts,min_conflicts,,lcv,False,5,0.0,28.31041302680969,15.827213349270316,39558018.8,,100000
